@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Peliculas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=3.0"
+    />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <style type="text/css">
+      :root {
+        /* AQUÍ VAN LOS COLORES PARA PERSONALIZAR LA VACANTE */
+        /* EL PRIMERO CORRESPONDE AL COLOR PREDOMINANTE EN EL LOGO DE LA EMPRESA */
+        --color-company: #2dc3fa;
+        /* EL SEGUNDO CORRESPONDE AL COLOR PREDOMINANTE EL EL LOGO DE LA TECNOLOGÍA RELACIONADA CON EL PUESTO */
+        --color-technology: #3c873a;
+      }
+      html {
+        height: 100%;
+      }
+
+      body {
+        background-color: #000;
+        /* La página de fondo será negra */
+        margin: 0;
+      }
+
+      .content {
+        padding: 50px 15px;
+        text-align: justify;
+      }
+
+      .content-video {
+        text-align: center;
+      }
+
+      .title {
+        font-weight: 700;
+        color: #32c91c;
+        text-align: center;
+        margin: 10px 0 20px;
+        font-size: 20px;
+      }
+
+      .addpeli {
+        margin: 20px auto 10px;
+        display: inline-block;
+        border-radius: 12px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 15px;
+        width: 100%;
+        height: 100px;
+      }
+
+      /* Center Ads section */
+      .ads-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .ads-img {
+        width: 80%;
+        height: 80%;
+      }
+
+      .details-title {
+        font-weight: bold;
+        margin-bottom: 1em;
+        display: block;
+        text-align: center;
+      }
+
+      .details-content {
+        margin-bottom: 1em;
+        display: block;
+        text-align: center;
+      }
+      ul {
+        margin-bottom: 1em;
+      }
+      a {
+        text-decoration: none;
+        color: #00b9ff;
+      }
+      .details-container {
+        color: #ffffff;
+        padding: 0.5em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        border-left: 3px solid var(--color-company);
+        border-radius: 20px;
+      }
+      hr {
+        size: 1px;
+        width: 50%;
+        color: #cccccc;
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      .company-content {
+        color: #ffffff;
+        margin-bottom: 3em;
+      }
+      .company-name {
+        color: var(--color-company);
+      }
+      #vacant-technology {
+        color: var(--color-technology);
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#">
+      <img
+        src="https://images4.imagebam.com/14/f3/0e/MEMBQ8W_o.png"
+        style="width: 100%; height: 100%"
+      />
+    </a>
+    <br />
+    <br />
+    <br />
+    <div style="align-items: center">
+      <p style="color: #00b9ff; margin-top: -84px; text-align: center">
+        <strong>Próximamente</strong>
+      </p>
+    </div>
+    <div style="align-items: center">
+      <p style="color: #ffffff; margin-top: 50px; text-align: center">
+        ¡Aprovecha nuestra propuesta educativa y consigue ese trabajo que
+        sueñas!
+      </p>
+      <p style="color: #ffffff; margin-top: 30px; text-align: center">
+        ¡Con BLU WORK lo lograrás!
+      </p>
+    </div>
+    <hr />
+    <div class="details-container">
+      <div align="center">
+        <a href="#">
+          <img
+            border="0"
+            src="https://images4.imagebam.com/07/4a/bf/MEMQ66H_o.png"
+            width="100%"
+            height="100%"
+          />
+        </a>
+        <p class="company-content">
+          ¡Trabaja en
+          <!-- AQUÍ VA EL NOMBRE DE LA EMPRESA -->
+          <span class="company-name">evolve</span>
+          EN REMOTO!
+        </p>
+      </div>
+      <span class="details-title" style="font-size: 1.3em"
+        >DETALLES DEL EMPLEO:</span
+      >
+      <!-- AQUÑI VA EL TITULO DE LA VACANTE -->
+      <span class="details-content" id="vacant-technology"
+        >Developer Node JS</span
+      >
+
+      <!-- PARA AGREGAR UNA CATEGORÍA(EJ: EXPERIENCIA, BENEFICIOS, REQUERIMIENTOS) ES NECESARIO CREAR UN SPAN CON LA CLASE "details-title" EN EL CUAL IRÍA EL TITULO DE LA CATEGORÍA. PARA EL CONTENIDO SE DEBE AGREGAR UN ELMENTO ul CON TANTOS li SEAN NECESARIOS -->
+      <span class="details-title">EXPERIENCIA:</span>
+      <ul>
+        <li>
+          Experiencia de +4 años en el desarrollo de aplicaciones usando NodeJS
+          y JavaScript.
+        </li>
+        <li>
+          Manejo de base de datos NoSQL y SQL como MongoDB, Redis y MySQL.
+        </li>
+        <li>
+          Conocimientos en desarrollo de aplicaciones web y experiencias en el
+          manejo de tecnologías como React y Angular será una ventaja adicional.
+        </li>
+      </ul>
+      <span class="details-title">BENEFICIOS:</span>
+      <ul>
+        <li>Estabilidad laboral.</li>
+        <li>Trabajo remoto (pero acudir a oficina 2 veces AL MES).</li>
+      </ul>
+      <span class="details-title">CONTACTO:</span>
+      <!-- EN el CASO DE QUE EL CONTENIDO DE LA CATEGORÍA TENGA UN SOLO ELEMENTO SE DEBERÍA AGREGAR LA CLASE "details-content". APLICA TAMBIÉN PAR CUANDO NO SE DESEA ORGANIZAR LOS ELEMENTOS EN UNA LISTA -->
+      <span class="details-content"
+        >Enviar CV a
+        <a href="mailto:v.trevino@evolve.com.mx"
+          >v.trevino@evolve.com.mx</a
+        ></span
+      >
+    </div>
+
+    <hr />
+
+    <br />
+    <div class="ads-container">
+      <img
+        src="https://images4.imagebam.com/96/f9/be/MEMKIZI_o.png"
+        class="ads-img"
+      />
+    </div>
+    <style>
+      .centered-text {
+        text-align: center;
+        font-size: 17px;
+      }
+    </style>
+    <p class="centered-text">
+      <a href="https://wa.link/tu9yfe" target="_blank"> Más información </a>
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+      let adsImage = document.querySelector(".ads-img");
+      adsImage.addEventListener("click", (e) => {
+        window.open("https://wa.link/tu9yfe");
+      });
+    </script>
+  </body>
+</html>
